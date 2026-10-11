@@ -102,6 +102,8 @@ public class robot extends Canvas {
             case D:
                 vpravo();
                 break;
+            default:
+                return;
         }
         kresli(robotX, robotY, k);
     }
