@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.nakupnyzozanm.HelloController">
+   <center>
+      <ListView fx:id="list" onMouseClicked="#mys" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+   <bottom>
+      <VBox alignment="BOTTOM_LEFT" prefHeight="68.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="lPocet" alignment="BOTTOM_LEFT" text="Pocet: 0" />
+         </children>
+      </VBox>
+   </bottom>
+   <top>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="txtPolozka" />
+            <TextField fx:id="txtKusy" prefHeight="25.0" prefWidth="51.0" />
+            <Button mnemonicParsing="false" onAction="#pridat" text="pridat" />
+            <Button mnemonicParsing="false" onAction="#upravit" text="upravit" />
+            <Button mnemonicParsing="false" onAction="#odstranit" text="odstranit" />
+         </children>
+      </HBox>
+   </top>
+</BorderPane>
