@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.Pane?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mocniny.HelloController">
+   <children>
+      <TextArea fx:id="ta1" layoutX="57.0" layoutY="25.0" prefHeight="200.0" prefWidth="200.0" />
+      <TextArea fx:id="ta2" layoutX="327.0" layoutY="25.0" prefHeight="200.0" prefWidth="200.0" />
+      <Button layoutX="57.0" layoutY="300.0" mnemonicParsing="false" onAction="#threadinit" text="init" />
+      <Spinner fx:id="sp" layoutX="57.0" layoutY="263.0" prefHeight="25.0" prefWidth="175.0" />
+      <Button layoutX="107.0" layoutY="300.0" mnemonicParsing="false" onAction="#stop" text="stop" />
+   </children>
+</Pane>
