@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.filmy_zanre.HelloController">
+   <center>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="tvFilm" prefHeight="332.0" prefWidth="535.0">
+              <columns>
+                <TableColumn fx:id="cTitle" prefWidth="75.0" text="title" />
+                <TableColumn fx:id="cLength" prefWidth="75.0" text="length" />
+                  <TableColumn fx:id="cYear" prefWidth="75.0" text="year" />
+                  <TableColumn fx:id="cLink" prefWidth="75.0" text="link" />
+              </columns>
+            </TableView>
+            <TableView fx:id="tvGenre" prefHeight="332.0" prefWidth="446.0">
+              <columns>
+                <TableColumn fx:id="cGenre" prefWidth="75.0" text="genre" />
+              </columns>
+            </TableView>
+         </children>
+      </HBox>
+   </center>
+   <bottom>
+      <VBox prefHeight="68.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="lCount" text="Movie TITLE in X genres" />
+         </children>
+      </VBox>
+   </bottom>
+</BorderPane>
