@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ulohaseminar8.HelloController">
+   <center>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="tableInvoice" prefHeight="200.0" prefWidth="321.0">
+              <columns>
+                <TableColumn fx:id="idCol" prefWidth="75.0" text="id" />
+                <TableColumn fx:id="dateCol" prefWidth="75.0" text="date" />
+                  <TableColumn fx:id="statusCol" prefWidth="75.0" text="status" />
+              </columns>
+            </TableView>
+            <TableView fx:id="tableProduct" prefHeight="200.0" prefWidth="351.0">
+              <columns>
+                <TableColumn fx:id="nameCol" prefWidth="75.0" text="name" />
+                <TableColumn fx:id="categoryCol" prefWidth="75.0" text="category" />
+                  <TableColumn fx:id="priceCol" prefWidth="75.0" text="price" />
+                  <TableColumn fx:id="amountCol" prefWidth="75.0" text="amount" />
+              </columns>
+            </TableView>
+         </children>
+      </HBox>
+   </center>
+   <bottom>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="totalLabel" layoutX="14.0" layoutY="178.0" text="total" />
+         </children>
+      </Pane>
+   </bottom>
+</BorderPane>
